@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests" verbose="1" parallel="classes" thread-count="1"
+	preserve-order="true">
+
+	<listeners>
+		<listener class-name="com.utility.Listener"></listener>
+	</listeners>
+
+	<test name="TestLoginFirst"> <!-- Default will run in order -->
+
+		<classes>
+			<class name="com.test.login.Sarees" />
+			<!-- <class name="com.test.login.Test2" /> -->
+		</classes>
+
+	</test>
+
+</suite>
